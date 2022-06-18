@@ -14,6 +14,19 @@
   font-weight: 400;
 }
 
+:root {
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0px 0px 0px #d0d0d0, 0px 0px 0px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -40,7 +53,6 @@ img {
 }
 
 .header {
-  background-color: #808080;
   padding: 20px 15px;
   position: absolute;
   width: 100%;
@@ -59,6 +71,8 @@ img {
   font-size: 24px;
   color: var(--skin-color);
   border-radius: 50%;
+  font-weight: 600;
+  text-transform: uppercase;
   border: solid 2px var(--skin-color);
 }
 
@@ -71,8 +85,41 @@ img {
   justify-content: space-between;
 }
 
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+
 .header .hamburger-btn {
   height: 40px;
   width: 40px;
-  background-color: purple;
+  /* box-shadow: 0 0 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .hamburger-btn span {
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 16px;
+  background-color: var(--bg-black-900);
+}
+
+.header .hamburger-btn span::after,
+.header .hamburger-btn span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  background-color: var(--bg-black-900);
+}
+
+.header .hamburger-btn span::before {
+  top: -6px
+}
+
+.header .hamburger-btn span::after {
+ top: 6px
 }
