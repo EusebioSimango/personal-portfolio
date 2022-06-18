@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,10 @@
 }
 :before, :after {
   box-sizing: border-box;
+}
+*:not(i) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -49,8 +55,11 @@ img {
   width: 40px;
   display: inline-block;
   text-align: center;
-  line-height: 40px;
-  background-color: violet;
+  line-height: 36px;
+  font-size: 24px;
+  color: var(--skin-color);
+  border-radius: 50%;
+  border: solid 2px var(--skin-color);
 }
 
 .row {
