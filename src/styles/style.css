@@ -91,6 +91,10 @@ img {
   justify-content: space-between;
 }
 
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+
 .outer-shadow {
   box-shadow: var(--outer-shadow);
 }
@@ -225,4 +229,22 @@ img {
   padding: 5px 30px;
   text-transform: capitalize;
   transition: all .3s ease;
+  border-radius: 30px; 
+}
+
+.nav-menu ul li a.active {
+  color: var(--skin-color);
+}
+
+.nav-menu ul li a::after {
+  border-radius: 30px;
+}
+
+.nav-menu .copyright {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  font-size: 15px;
+  color: var(--text-black-600);
+  transform: translateY(50%) rotate(-90deg);
 }
