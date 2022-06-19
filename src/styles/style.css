@@ -143,7 +143,6 @@ img {
 }
 
 .effect-3 {
-  position: absolute;
   height: 180px;
   width: 180px;
   border: 25px solid var(--skin-color);
@@ -151,6 +150,24 @@ img {
   left: 50%;
   top: -120px;
   animation: leftBounce 3s ease-in-out infinite;
+}
+
+.effect-4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 30%;
+  top: 20%;
+  animation: spin 15s linear infinite;
+}
+
+.effect-4::before {
+  content: '';
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  position: absolute;
+  opacity: 0.5;
+  left: -35px;
+  top: -25px;
 }
 
 @keyframes spin {
