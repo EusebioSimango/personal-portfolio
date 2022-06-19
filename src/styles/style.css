@@ -125,6 +125,23 @@ img {
   animation: spin 10s linear infinite;
 }
 
+.effect-2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite;
+}
+
+.effect-2 div {
+  height: 3px;
+  width: 3px;
+  background-color: #ff9c07;
+  margin: 0 3px 8px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -132,6 +149,16 @@ img {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes topBounce {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(25px);
   }
 }
 
