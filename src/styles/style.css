@@ -27,6 +27,10 @@
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -47,7 +51,7 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 90%;
   /* background-color: #ff0000; */
   margin: auto;
 }
@@ -168,6 +172,10 @@ img {
   opacity: 0.5;
   left: -35px;
   top: -25px;
+}
+
+.effect-5 div {
+  
 }
 
 @keyframes spin {
