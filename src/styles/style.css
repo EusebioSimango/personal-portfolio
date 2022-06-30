@@ -174,8 +174,15 @@ img {
   top: -25px;
 }
 
+.effect-5 {
+  height: 50px;
+  width: 50px;
+}
+
 .effect-5 div {
-  
+  width: 4px;
+  background-color: #4dd0e1; 
+
 }
 
 @keyframes spin {
