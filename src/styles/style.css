@@ -177,6 +177,13 @@ img {
 .effect-5 {
   height: 50px;
   width: 50px;
+  right: 30%;
+  top:  30%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
 }
 
 .effect-5 div {
