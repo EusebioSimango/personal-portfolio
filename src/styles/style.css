@@ -533,3 +533,34 @@ padding: 15px;
   margin-bottom: 15px;
   color: var(--text-black-600)
 }
+
+.about-section .about-tabs {
+  padding: 60px 15px 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about-section .about-tabs .tab-item {
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.about-section .about-tabs .tab-item:hover:not(.active) { 
+  opacity: 0.6;
+
+}
+
+.about-section .about-tabs .tab-item.active {
+  color: var(--skin-color)
+}
+
+  
