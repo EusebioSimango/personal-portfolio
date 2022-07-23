@@ -569,6 +569,10 @@ padding: 15px;
   display: none;
 }
 
+.about-section .tab-content.active {
+  display: block;
+}
+
 .about-section .tab-content .row {
   width: 100%;
   justify-content: center;
