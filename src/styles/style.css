@@ -566,6 +566,7 @@ padding: 15px;
 .about-section .tab-content {
   flex: 0 0 100%;
   max-width: 100%;
+  display: none;
 }
 
 .about-section .tab-content .row {
