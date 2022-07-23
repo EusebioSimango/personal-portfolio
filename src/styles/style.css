@@ -490,6 +490,37 @@ padding: 15px;
   border-radius: 5px;
 }
 
+.about-section .about-img .social-links {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.about-section .about-img .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-black-600);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.about-section .about-img .social-links a::after {
+  border-radius: 50%;
+}
+
+.about-section .about-img .social-links a:hover { 
+  color: var(--skin-color);
+}
+
+.about-section .about-img .social-links a i {
+  line-height: 42px;
+}
+
 .about-section .about-info {
   flex: 0 0 60%;
   max-width: 60%;
